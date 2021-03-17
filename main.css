@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(233, 231, 231);
+}
+
+.title{
+    text-align: center;
+}
+.searchSection{
+    margin-left: 15px;
+}
+.content{
+    margin: 0 20px 50px 20px;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 100vh;
+    border-color: dimgray;
+    background-color: rgb(255, 255, 255);
+}
+
+.viewSection {
+    border-top: 1px solid rgb(199, 199, 199);
+    padding: 20px 15px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.viewSection li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style: none;
+    padding: 5px 15px 15px 15px;
+}
+.viewSection li img{
+    width:70px
+}
