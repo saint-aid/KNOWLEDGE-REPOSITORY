@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "name": "okcheon",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    },
+    {
+        "id": "2",
+        "name": "uew2pro",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    },
+    {
+        "id": "3",
+        "name": "gwacheon",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    },
+    {
+        "id": "4",
+        "name": "pyengtack",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    },
+    {
+        "id": "5",
+        "name": "wonju",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    },
+    {
+        "id": "6",
+        "name": "ueiwang",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    },
+    {
+        "id": "7",
+        "name": "seoul",
+        "type": "DIRECTORY",
+        "filePath": null,
+        "parent": null
+    }
+]
