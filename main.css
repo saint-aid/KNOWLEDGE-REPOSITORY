@@ -15,11 +15,12 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.searchSection{
+.explSection{
     margin-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(199, 199, 199);
 }
 .viewSection {
-    border-top: 1px solid rgb(199, 199, 199);
     padding: 20px 15px 15px 15px;
     display: flex;
     flex-wrap: wrap;

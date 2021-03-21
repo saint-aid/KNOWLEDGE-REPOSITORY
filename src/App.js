@@ -1,22 +1,24 @@
 import { api } from "/src/api.js";
+import ExplorationSection from "/src/components/ExplorationSection.js"
+import ViewSection from "/src/components/ViewSection.js";
 
 export default class App {
    constructor($element){
-      this.$element = $element;
-      this.render();
+     const titleContent = `<h1 class="title">Knowledge-Repository</h1>
+                     <div class="content"></div>`;
+      $element.innerHTML = titleContent;
+     
+      const explSection = new ExplorationSection({
+         $element,
+         //init: async()=
+         onClick: data => {
+            viewSection.setState(data);
+         },
+      });
+      const viewSection = new ViewSection($element,null);
+
    }
    
-   setState(data){
-      console.log(data);
-      this.render();
-   }
-
-   render(){
-      const response = api.fetchAll();
-      console.log(response);
-      const el = '<h1>강아지</h1>'  
-      this.$element.innerHTML = el;
-   }
 }
 
 
