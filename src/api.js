@@ -4,11 +4,11 @@ const _URL ={
    id : "http://localhost:5500/asset/jsons/api-id.json"
 } 
 
-const fetchRequest = async url =>{
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
-}
+// const fetchRequest = async url =>{
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     return data;
+// }
 
 const api = {
     fetchOne : async id => {

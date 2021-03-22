@@ -4,21 +4,29 @@ import ViewSection from "/src/components/ViewSection.js";
 
 export default class App {
    constructor($element){
-     const titleContent = `<h1 class="title">Knowledge-Repository</h1>
-                     <div class="content"></div>`;
-      $element.innerHTML = titleContent;
-     
+      console.log('1111111111111111111111111');
+
       const explSection = new ExplorationSection({
          $element,
-         //init: async()=
-         onClick: data => {
-            viewSection.setState(data);
+         onSearch: async key =>{
+            let reponse = await api.fetchAll();
+            if(key) reponse = await api.fetchAll(key);          
+            viewSection.setState(reponse);
          },
+         // onClick: data => {
+         //    //viewSection.setState(data);
+         // },
       });
-      const viewSection = new ViewSection($element,null);
 
+      const viewSection = new ViewSection({
+         $element,
+         // data : async () =>{
+         //    const data = await api.fetchAll();
+         //    //console.log("data --> ", data);
+         //    viewSection.setState(data);
+         // },
+      });
    }
-   
 }
 
 
