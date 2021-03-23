@@ -10,7 +10,8 @@ export default class App {
          $element,
          onSearch: async key =>{
             let reponse = await api.fetchAll();
-            if(key) reponse = await api.fetchAll(key);          
+            if(key) reponse = await api.fetchAll(key);   
+            console.log("111110 > ", key)       
             viewSection.setState(reponse);
          },
          // onClick: data => {

@@ -1,6 +1,6 @@
 export default class ExplorationSection{
     constructor({$element,onSearch,select}){
-        console.log('2222222222222222222', onSearch);
+
         this.onSearch = onSearch;
         this.explSection = document.createElement('h4');
         this.explSection.className = 'explSection';                
@@ -18,8 +18,9 @@ export default class ExplorationSection{
 
         const spanTitle = document.createElement('span');        
         spanTitle.innerText = "root";
+        spanTitle.style.cursor="pointer";
 
-        spanTitle.addEventListener('click', this.onSearch());
+        //spanTitle.addEventListener('click', () =>{this.onSearch()});
         this.explSection.appendChild(spanTitle);
 
     }
