@@ -27,6 +27,8 @@ export default class App {
          //    viewSection.setState(data);
          // },
       });
+
+      console.log(viewSection);
    }
 }
 
