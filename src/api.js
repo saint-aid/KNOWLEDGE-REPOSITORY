@@ -11,10 +11,11 @@ const _URL ={
 // }
 
 const api = {
-    fetchOne : async id => {
+    fetchKey : async id => {
         const response = await fetch(_URL.id);
         const data = await response.json();
-        return data;
+        const resultData = data.filter(x => {return x.parent.id === id});
+        return resultData;
     },
     fetchAll : async()=>{
         const response = await fetch(_URL.all);
